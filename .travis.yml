@@ -1,0 +1,15 @@
+language: ruby
+
+sudo: false
+
+git:
+  depth: 10
+
+rvm:
+  - 2.6.8
+  - 2.7.4
+
+bundler_args: --jobs=9 --retry=2 --quiet
+
+script:
+  - rake full
